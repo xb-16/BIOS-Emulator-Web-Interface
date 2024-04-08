@@ -1,3 +1,7 @@
+if(window.innerWidth < 960){
+    alert("You Can't Navigate BIOS effectively, Please Use Scren With Long Width For Best Experience.");
+}
+
 // disabling right Click Using Mouse.
 document.oncontextmenu = (e) => {
     e.preventDefault();
@@ -96,7 +100,8 @@ setInterval(function(){
 },1000);
 // end timer
 
-// controlling using keyboard        
+// controlling using keyboard
+if(!biosClosed){
 document.onkeydown = function(e) {
     e.preventDefault(); // To 
     var keyCode = e.code;
@@ -493,6 +498,7 @@ document.onkeydown = function(e) {
             }
         }
     }
+}
 }
 // controlling using keyboard
 
