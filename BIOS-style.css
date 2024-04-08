@@ -1,18 +1,17 @@
+/* offline font */
 @font-face {
-font-family: "Perfect Dos VGA";
+font-family: "Perfect Dos VGA 437";
 src: url("Perfect DOS VGA 437.ttf");
 }
-@font-face {
-font-family: "Web IBM BIOS";
-src: url("web_ibm_bios.woff")  format('woff');
-}
-
+/*
+online font :
+@import url('https://fonts.cdnfonts.com/css/perfect-dos-vga-437');
+*/
 body {
     position: relative;
 }
 * {
-    font-family: "Perfect Dos VGA";
-    font-family: "Web IBM BIOS";
+    font-family: "Perfect Dos VGA 437";
     font-weight: 600;
     margin:0;
     padding:0;
