@@ -7,11 +7,16 @@ src: url("Perfect DOS VGA 437.ttf");
 online font :
 @import url('https://fonts.cdnfonts.com/css/perfect-dos-vga-437');
 */
+:root {
+    --blueLight:#0089BB;
+    --blueDark:#0019CB;
+    --grey:#B6B3B0;
+}
 body {
     position: relative;
 }
 * {
-    font-family: "Perfect Dos VGA 437";
+    font-family: 'Perfect DOS VGA 437';
     font-weight: 600;
     margin:0;
     padding:0;
@@ -25,7 +30,7 @@ body {
     user-select: none; /* Standard syntax */
 }
 .hdng {
-    background-color: #0089BB;
+    background-color: var(--blueLight);
     padding: 10px;
     text-align: center;
 }
@@ -33,8 +38,8 @@ body {
 .swtch {
     display: flex;
     flex-direction: row;
-    background-color: #0019CB;
-    color:#B6B3B0;
+    background-color: var(--blueDark);
+    color:var(--grey);
 }
 .swtch .selm {
     width:10%;
@@ -56,18 +61,16 @@ body {
     width:100%;
     min-height:100%;
     display:none;
-    background:#B6B3B0;
+    background:var(--grey);
     position: relative;
 }
 .parent {
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
-    align-items: stretch;
     height:100%;
 }
 .child {
-    color:#0019CB;
+    color:var(--blueDark);
     padding:20px;
 }
 .child:first-child > div {
@@ -114,7 +117,7 @@ body {
 
 /* Start Footer */
 .footer {
-    background-color: #0089BB;
+    background-color: var(--blueLight);
     height:70px;
     font-size:18px;
     display: flex;
@@ -249,18 +252,16 @@ body {
 .help {
     display:flex;
     flex-direction:column;
-    justify-content: center;
     align-items: center;
-    background-color: #B6B3B0;
-    color: #0019CB;
-    min-height:100%;
-    width:100%;
+    background-color: var(--grey);
+    color: var(--blueDark);
     padding:1%;
     line-height:35px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position:fixed;
 }
 .help > div:first-child{
     text-align:center;
@@ -287,7 +288,7 @@ body {
 
 /* Start SubMenu*/
 .subMenu {
-    background: #B6B3B0;
+    background: var(--grey);
     position: absolute;
     top:0;
     left:0;
