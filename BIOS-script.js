@@ -11,7 +11,7 @@ document.oncontextmenu = (e) => {
 var var1 = `Keys used to view or configure devices: &lt;Enter&gt; expands or collapses devices with a + or -
         &lt;Ctrl+Enter&gt; expands all &lt;+&gt; and &lt;-&gt; moves the device up or down.&lt;n&gt; May move removable device between Hard Disk or Removable Disk &lt;d&gt; Remove a device that is not installed.`;
 var var2 = `&lt;tab&gt;, &lt;shift-tab&gt;, or &lt;enter&gt; selects fields`;
-var var3 = `Setup changes system behavior by modifying the BIOS
+var helpText = `Setup changes system behavior by modifying the BIOS
             Configuration parameters. Selecting incorrect values
             may cause system boot failure; load Setup Default values
             to recover.<br><br>
@@ -247,7 +247,7 @@ document.onkeydown = function(e) {
         <div class="help">
             <div>general help</div>
             <div>
-                ${var3}
+                ${helpText}
                 <div class="continue curly">continue</div>
             </div>
         </div>`;
