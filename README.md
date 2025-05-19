@@ -1,3 +1,7 @@
+# <p align="center">BIOS Emulator Web Interface : React Project </p>
+
+
+
 <p align="center">
   <img alt="Old BIOS Interface" src="https://www.intra2net.com/en/support/manual/images/install/bios-hp-power.png" />
 </p>
@@ -38,4 +42,4 @@ It simulates the classic BIOS screen and transforms it into a web-based interfac
 
 ### 🔗 Preview on GitHub Pages
 
-[BIOS Emulator : GitHub Pages](https://xb-16.github.io/BIOS-Emulator-Web-Interface/BIOS-index.html)
+[BIOS Emulator : GitHub Pages](https://xb-16.github.io/BIOS-Emulator-Web-Interface/)
