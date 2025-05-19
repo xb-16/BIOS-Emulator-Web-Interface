@@ -1,0 +1,116 @@
+/* offline font */
+@font-face {
+  font-family: "Perfect Dos VGA 437";
+  src: url("/Perfect DOS VGA 437.ttf");
+}
+/*
+  // online font :
+  @import url('https://fonts.cdnfonts.com/css/perfect-dos-vga-437');
+*/
+:root {
+  --blueLight: #0089bb;
+  --blueDark: #0019cb;
+  --grey: #b6b3b0;
+}
+body {
+  position: relative;
+}
+* {
+  font-family: "Perfect DOS VGA 437";
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 21px;
+  /* For Best Emulation disabling cursor, mouse events, selection*/
+  /*       cursor:none;
+      pointer-events:none;
+      -webkit-user-select: none; */ /* Safari */
+  /* -ms-user-select: none; */ /* IE 10 and IE 11 */
+  /* user-select: none; */ /* Standard syntax */
+}
+
+/* Start Tabs Content */
+.telm {
+  width: 70%;
+  min-height: 100%;
+  background: var(--grey);
+  position: relative;
+}
+.tabsContainer {
+  padding: 20px;
+  display: flex;
+  background-color: var(--grey);
+}
+.parent {
+  min-height: 70vh;
+  border: 2px solid black;
+  border-right: none;
+}
+.child {
+  color: var(--blueDark);
+  padding: 20px;
+}
+.child > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.child {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+/* End Tabs Content */
+
+/* Start Footer */
+footer .rowelm:nth-child(odd) {
+  flex-basis: 5%;
+  color: white;
+}
+footer .rowelm:nth-child(even) {
+  flex-basis: 20%;
+}
+/* End Footer */
+
+/* Start Some Custom Styles For Some Elements */
+.curly::before {
+  content: "[";
+}
+.curly::after {
+  content: "]";
+}
+.arrow,
+.add {
+  position: relative;
+}
+.arrow::before,
+.add::before {
+  position: absolute;
+  top: -50%;
+  transform: translateY(50%);
+}
+.add::before {
+  content: "+";
+  left: -15px;
+}
+.arrow::before {
+  content: "\2BC8";
+  left: -22px;
+}
+.black {
+  color: black;
+}
+/* End Custom Styles */
+@keyframes old {
+  0% {
+    height: 40px;
+  }
+  85% {
+    height: 80px;
+  }
+  100% {
+    height: 140px;
+  }
+}
+/* Start The Confirmation Panel */
+@import "tailwindcss";
