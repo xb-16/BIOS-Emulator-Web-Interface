@@ -38,4 +38,4 @@ It simulates the classic BIOS screen and transforms it into a web-based interfac
 
 ### 🔗 Preview on GitHub Pages
 
-[BIOS Emulator : GitHub Pages](https://xb-16.github.io/BIOS-Emulator-Web-Interface/BIOS-index.html)
+[BIOS Emulator : GitHub Pages](https://xb-16.github.io/BIOS-Emulator-Web-Interface/)
