@@ -20,12 +20,12 @@ body {
   font-weight: 600;
   text-transform: capitalize;
   font-size: 21px;
-  /* For Best Emulation disabling cursor, mouse events, selection*/
-  /*       cursor:none;
-      pointer-events:none;
-      -webkit-user-select: none; */ /* Safari */
-  /* -ms-user-select: none; */ /* IE 10 and IE 11 */
-  /* user-select: none; */ /* Standard syntax */
+  /*For Best Emulation disabling cursor, mouse events, selection*/
+  cursor: none;
+  pointer-events: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 /* Start Tabs Content */

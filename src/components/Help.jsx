@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 export default function Help() {
   const contentRef = useRef(null);
   const [displayContinue, setdisplayContinue] = useState(true);
-  console.log(displayContinue.current);
   useEffect(() => {
     const handleKeyDown = (e) => {
       e.preventDefault();
@@ -28,7 +27,7 @@ export default function Help() {
     };
   }, []);
   return (
-    <div className="bg-[#b6b3b0] text-[#0019cb] !p-6 box-content h-[100vh]">
+    <div className="bg-[#b6b3b0] text-[#0019cb] !p-6 box-content !max-h-[100vh]">
       <div className="relative border-2 border-black">
         <h1 className="border-b-2 border-black p-3 text-center">
           General Help

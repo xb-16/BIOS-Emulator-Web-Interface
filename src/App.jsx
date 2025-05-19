@@ -19,6 +19,17 @@ import ItemDescription from "./components/ItemDescription.jsx";
 import { navigationUpdate } from "./app/navigationActions.js";
 
 function App() {
+  if (window.innerWidth < 960) {
+    alert(
+      "You Can't Navigate BIOS effectively, Please Use Scren With Long Width For Best Experience."
+    );
+  }
+
+  // disabling right Click Using Mouse.
+  document.oncontextmenu = (e) => {
+    e.preventDefault();
+  };
+
   let actualTab = useSelector((state) => state.tab);
   let popup = useSelector((state) => state.popup);
   let help = useSelector((state) => state.help);
