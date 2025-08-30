@@ -39,7 +39,7 @@ function App() {
   useEffect(() => {
     const handleKeyDown = (e) => {
       e.preventDefault();
-      if (!subMenu.status) {
+      if (!subMenu.status || !popup.status) {
         if (e.key == "ArrowRight") {
           dispatch(next());
           dispatch(navigationUpdate(1, ""));
